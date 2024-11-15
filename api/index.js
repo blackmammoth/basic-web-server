@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-const port = 3000
+const PORT = 3000
 
 app.get('/', (req, res) => {
     res.send("Hello InterTecHub Team!")
@@ -18,7 +18,7 @@ app.get('/dream', (req, res) => {
     res.send("Be grateful...what more can I ask?")
 })
 
-app.listen(port, () => {
+app.listen(PORT, () => {
     console.log(`Listening on port ${port}`);
 })
 
